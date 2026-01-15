@@ -1,145 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Terms of Service for Vegelah - Your vegetarian community app. Read our terms and conditions.">
     <title>Terms of Service - Vegelah</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        .header {
-            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        .header h1 { margin-bottom: 0.5rem; }
-        .header p { opacity: 0.9; }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: white;
-            min-height: calc(100vh - 200px);
-        }
-        h2 { color: #2e7d32; margin: 2rem 0 1rem 0; }
-        h2:first-child { margin-top: 0; }
-        p, ul { margin-bottom: 1rem; }
-        ul { padding-left: 1.5rem; }
-        li { margin-bottom: 0.5rem; }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1rem;
-            color: #4caf50;
-            text-decoration: none;
-        }
-        .back-link:hover { text-decoration: underline; }
-        .footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥬</text></svg>">
 </head>
+
 <body>
-    <div class="header">
-        <h1>Terms of Service</h1>
-        <p>Last updated: January 14, 2025</p>
-    </div>
-    <div class="container">
-        <a href="index.html" class="back-link">← Back to Legal</a>
+    <div class="bg-animated"></div>
 
-        <h2>1. Acceptance of Terms</h2>
-        <p>By downloading, installing, or using the Vegelah mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our App.</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="back-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Back to Legal
+                </a>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
-        <h2>2. Description of Service</h2>
-        <p>Vegelah is a community-driven mobile application that helps users discover vegetarian and vegan food options, share their experiences, and connect with like-minded individuals. Our services include:</p>
-        <ul>
-            <li>Discovering vegetarian restaurants and food places</li>
-            <li>Scanning food products for vegetarian/vegan suitability</li>
-            <li>Sharing posts, photos, and reviews with the community</li>
-            <li>Participating in events and challenges</li>
-            <li>Earning rewards and achievements</li>
-        </ul>
+    <!-- Document -->
+    <main class="document container container-narrow">
+        <div class="document-header">
+            <h1>Terms of Service</h1>
+            <p class="document-date">Last updated: January 14, 2025</p>
+        </div>
 
-        <h2>3. User Accounts</h2>
-        <p>To access certain features, you must create an account. You agree to:</p>
-        <ul>
-            <li>Provide accurate and complete registration information</li>
-            <li>Maintain the security of your account credentials</li>
-            <li>Notify us immediately of any unauthorized access</li>
-            <li>Be responsible for all activities under your account</li>
-        </ul>
-        <p>You must be at least 13 years old to create an account and use our services.</p>
+        <article class="document-content">
+            <!-- Section 1 -->
+            <section class="section" id="acceptance">
+                <h2>1. Acceptance of Terms</h2>
+                <p>By downloading, installing, or using the Vegelah mobile application ("App"), you agree to be bound by
+                    these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our App.</p>
+            </section>
 
-        <h2>4. User Content</h2>
-        <p>You retain ownership of content you post ("User Content"). By posting content, you grant us a non-exclusive, worldwide, royalty-free license to use, display, reproduce, and distribute your content within the App and for promotional purposes.</p>
-        <p>You agree not to post content that:</p>
-        <ul>
-            <li>Is false, misleading, or deceptive</li>
-            <li>Is defamatory, obscene, or offensive</li>
-            <li>Infringes on intellectual property rights</li>
-            <li>Contains spam, malware, or harmful code</li>
-            <li>Violates any applicable laws or regulations</li>
-            <li>Harasses, threatens, or bullies other users</li>
-        </ul>
-        <p>We reserve the right to remove any content that violates these Terms.</p>
+            <!-- Section 2 -->
+            <section class="section" id="description">
+                <h2>2. Description of Service</h2>
+                <p>Vegelah is a community-driven mobile application that helps users discover vegetarian and vegan food
+                    options, share their experiences, and connect with like-minded individuals. Our services include:
+                </p>
+                <ul>
+                    <li>Discovering vegetarian restaurants and food places</li>
+                    <li>Scanning food products for vegetarian/vegan suitability</li>
+                    <li>Sharing posts, photos, and reviews with the community</li>
+                    <li>Participating in events and challenges</li>
+                    <li>Earning rewards and achievements</li>
+                </ul>
+            </section>
 
-        <h2>5. Community Guidelines</h2>
-        <p>To maintain a positive community, you agree to:</p>
-        <ul>
-            <li>Treat other users with respect and kindness</li>
-            <li>Provide honest and helpful reviews</li>
-            <li>Report inappropriate content or behavior</li>
-            <li>Not impersonate others or create fake accounts</li>
-            <li>Not engage in any form of harassment or discrimination</li>
-        </ul>
+            <!-- Section 3 -->
+            <section class="section" id="accounts">
+                <h2>3. User Accounts</h2>
+                <p>To access certain features, you must create an account. You agree to:</p>
+                <ul>
+                    <li>Provide accurate and complete registration information</li>
+                    <li>Maintain the security of your account credentials</li>
+                    <li>Notify us immediately of any unauthorized access</li>
+                    <li>Be responsible for all activities under your account</li>
+                </ul>
+                <p>You must be at least 13 years old to create an account and use our services.</p>
+            </section>
 
-        <h2>6. Intellectual Property</h2>
-        <p>The App, including its design, features, and content (excluding User Content), is owned by Vegelah and protected by intellectual property laws. You may not copy, modify, distribute, or create derivative works without our permission.</p>
+            <!-- Section 4 -->
+            <section class="section" id="content">
+                <h2>4. User Content</h2>
+                <p>You retain ownership of content you post ("User Content"). By posting content, you grant us a
+                    non-exclusive, worldwide, royalty-free license to use, display, reproduce, and distribute your
+                    content within the App and for promotional purposes.</p>
+                <p>You agree not to post content that:</p>
+                <ul>
+                    <li>Is false, misleading, or deceptive</li>
+                    <li>Is defamatory, obscene, or offensive</li>
+                    <li>Infringes on intellectual property rights</li>
+                    <li>Contains malware or harmful code</li>
+                    <li>Violates any applicable laws</li>
+                </ul>
+            </section>
 
-        <h2>7. Third-Party Services</h2>
-        <p>Our App may contain links to or integrate with third-party services (e.g., maps, payment processors, advertising networks). We are not responsible for the content or practices of these third parties. Your use of third-party services is subject to their respective terms and policies.</p>
+            <!-- Section 5 -->
+            <section class="section" id="guidelines">
+                <h2>5. Community Guidelines</h2>
+                <p>Users must:</p>
+                <ul>
+                    <li>Treat others with respect and courtesy</li>
+                    <li>Post honest and accurate reviews</li>
+                    <li>Not engage in harassment, bullying, or discrimination</li>
+                    <li>Not spam or post irrelevant content</li>
+                    <li>Report inappropriate content or behavior</li>
+                </ul>
+            </section>
 
-        <h2>8. Advertising</h2>
-        <p>The App displays advertisements from third-party advertising networks. By using the App, you consent to receiving advertisements. Some ads may be personalized based on your usage data and preferences.</p>
+            <!-- Section 6 -->
+            <section class="section" id="ip">
+                <h2>6. Intellectual Property</h2>
+                <p>The App, including its design, features, and content (excluding User Content), is owned by Vegelah
+                    and protected by intellectual property laws. You may not copy, modify, distribute, or reverse
+                    engineer any part of the App without our written permission.</p>
+            </section>
 
-        <h2>9. Disclaimers</h2>
-        <p>The App is provided "as is" without warranties of any kind. We do not guarantee:</p>
-        <ul>
-            <li>The accuracy of restaurant information or product scans</li>
-            <li>Uninterrupted or error-free service</li>
-            <li>That the App will meet your specific requirements</li>
-        </ul>
-        <p><strong>Important:</strong> Always verify dietary information directly with restaurants or product manufacturers. We are not responsible for any allergic reactions or health issues resulting from reliance on information in the App.</p>
+            <!-- Section 7 -->
+            <section class="section" id="third-party">
+                <h2>7. Third-Party Services</h2>
+                <p>The App may contain links to or integrate with third-party services. We are not responsible for the
+                    content, privacy policies, or practices of these services. Your use of third-party services is at
+                    your own risk.</p>
+            </section>
 
-        <h2>10. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, Vegelah shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App, including but not limited to loss of data, profits, or goodwill.</p>
+            <!-- Section 8 -->
+            <section class="section" id="advertising">
+                <h2>8. Advertising</h2>
+                <p>The App may display advertisements from third-party providers. These providers may collect
+                    information about your app usage for advertising purposes. See our Privacy Policy for more details.
+                </p>
+            </section>
 
-        <h2>11. Indemnification</h2>
-        <p>You agree to indemnify and hold harmless Vegelah and its affiliates from any claims, damages, or expenses arising from your use of the App, your User Content, or your violation of these Terms.</p>
+            <!-- Section 9 -->
+            <section class="section" id="disclaimers">
+                <h2>9. Disclaimers</h2>
+                <p>The App is provided "as is" without warranties of any kind. We do not guarantee:</p>
+                <ul>
+                    <li>The accuracy of restaurant information or reviews</li>
+                    <li>The dietary suitability of any food items</li>
+                    <li>Uninterrupted or error-free service</li>
+                    <li>The security of user data beyond reasonable measures</li>
+                </ul>
+            </section>
 
-        <h2>12. Termination</h2>
-        <p>We may suspend or terminate your account at any time for violations of these Terms or for any other reason at our discretion. You may delete your account at any time through the App settings.</p>
+            <!-- Section 10 -->
+            <section class="section" id="liability">
+                <h2>10. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law, Vegelah shall not be liable for any indirect, incidental,
+                    special, or consequential damages arising from your use of the App, including but not limited to
+                    dietary reactions, health issues, or reliance on user-generated content.</p>
+            </section>
 
-        <h2>13. Changes to Terms</h2>
-        <p>We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance of the new Terms. We will notify you of significant changes through the App or via email.</p>
+            <!-- Section 11 -->
+            <section class="section" id="indemnification">
+                <h2>11. Indemnification</h2>
+                <p>You agree to indemnify and hold harmless Vegelah and its affiliates from any claims, damages, or
+                    expenses arising from your violation of these Terms or your use of the App.</p>
+            </section>
 
-        <h2>14. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of Singapore, without regard to its conflict of law provisions.</p>
+            <!-- Section 12 -->
+            <section class="section" id="termination">
+                <h2>12. Termination</h2>
+                <p>We may suspend or terminate your account at any time for violations of these Terms or for any other
+                    reason at our discretion. Upon termination, your right to use the App ceases immediately.</p>
+            </section>
 
-        <h2>15. Contact Us</h2>
-        <p>If you have any questions about these Terms, please contact us at:</p>
-        <p><strong>Email:</strong> vegelahmy@gmail.com</p>
-    </div>
-    <div class="footer">
-        <p>&copy; 2025 Vegelah. All rights reserved.</p>
-    </div>
+            <!-- Section 13 -->
+            <section class="section" id="changes">
+                <h2>13. Changes to Terms</h2>
+                <p>We may update these Terms from time to time. Continued use of the App after changes constitutes
+                    acceptance of the new Terms. We will notify users of significant changes through the App or email.
+                </p>
+            </section>
+
+            <!-- Section 14 -->
+            <section class="section" id="governing-law">
+                <h2>14. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of Malaysia, without
+                    regard to its conflict of law provisions.</p>
+            </section>
+
+            <!-- Section 15 -->
+            <section class="section" id="contact">
+                <h2>15. Contact Us</h2>
+                <p>If you have any questions about these Terms, please contact us at:</p>
+                <p><strong>Email:</strong> <a href="mailto:vegelahmy@gmail.com">vegelahmy@gmail.com</a></p>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <p>© 2025 Vegelah. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('vegelah-theme', newTheme);
+        }
+
+        // Load saved theme
+        (function () {
+            const savedTheme = localStorage.getItem('vegelah-theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
 </body>
+
 </html>
